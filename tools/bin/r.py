@@ -114,7 +114,7 @@ def getJavaFieldTypeFromMysqlType(mysqlTypeInfoDic):
     elif 'float'== mysqlTypeStr:
         return 'Float';
     elif 'int'== mysqlTypeStr or 'integer'== mysqlTypeStr:
-        return 'Long';
+        return 'Integer'; #公司代码目前需要用int,原来计划是Log
     elif 'date'== mysqlTypeStr:
         return 'Date';
     elif 'time'== mysqlTypeStr:
@@ -184,9 +184,8 @@ def getDefMethodStr(fieldList,tableName):
 #dbName = "test";
 #tableName = "user"
 dbName = "zra";
-tableName = "treconitemsoperatehis"
-testvar = 'testVar'
-print getJavaMethodName(testvar)
+tableName = "treconitemsinvoice"
+
 
 prepare();
 print OUTDIR;
