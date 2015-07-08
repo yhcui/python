@@ -36,7 +36,7 @@ def prepare():
 
 def getTableInfo(dbName,tableName):
     #连接数据库
-    conn=MySQLdb.connect(host="127.0.0.1",user="root",passwd="root",db=dbName,charset="utf8")  
+    conn=MySQLdb.connect(host="172.16.13.201",user="zra",passwd="ziroom",db=dbName,charset="utf8")
      
     cursor = conn.cursor ( cursorclass = MySQLdb . cursors . DictCursor )
     
@@ -70,8 +70,9 @@ def getClassNameByTableName(tableName):
 
 def getClassHeader(className,dbName,tableName):
     str = '@Entity\n'
-    str = '@Table(name = "'+tableName+'", catalog = "'+dbName+'")\n'
-    return "public class "+ className +" extends BaseEntity implements Serializable{\n";
+    str += '@Table(name = "'+tableName+'", catalog = "'+dbName+'")\n'
+    str += "public class "+ className +" extends BaseEntity implements Serializable{\n";
+    return str;
 
 def conMysqlToJava(tableInfo):
     fieldList =[];
@@ -79,8 +80,9 @@ def conMysqlToJava(tableInfo):
         mysqlTypeInfoDic = getMysqlTypeInfo(value['Type']);
         javaFieldType = getJavaFieldTypeFromMysqlType(mysqlTypeInfoDic);
         javaFieldName = getJavaFieldNameFromMysqlName(value['Field']);
+        javaMethodName =getJavaMethodName(javaFieldName);
         print value['Comment'];
-        javaFileld={'javaField':javaFieldName,'javaFieldType':javaFieldType,'comment':value['Comment'],'mysqlField':value['Field'],'key':value['Key']};
+        javaFileld={'javaMethodName':javaMethodName,'javaField':javaFieldName,'javaFieldType':javaFieldType,'comment':value['Comment'],'mysqlField':value['Field'],'key':value['Key']};
         fieldList.append(javaFileld);
 
     return fieldList;
@@ -129,7 +131,10 @@ def getJavaFieldTypeFromMysqlType(mysqlTypeInfoDic):
         return 'BigDecimal'
     else:
         return 'ERROR';
-    
+def getJavaMethodName(javaFieldName):
+    temp = javaFieldName[0:1]
+    return temp.capitalize()+javaFieldName[1:];
+
 def getJavaFieldNameFromMysqlName(mysqlFieldName):
 
     javaFieldName='';
@@ -167,11 +172,11 @@ def getDefMethodStr(fieldList,tableName):
         else:
             str +='\t@Column(name = "'+field['mysqlField']+'")\n';
         
-        str +='\tpublic '+field['javaFieldType']+' get'+field['javaField'].capitalize()+'(){\n';
-        str +='\t\tthis.'+field['javaField']+'\n';
+        str +='\tpublic '+field['javaFieldType']+' get'+field['javaMethodName']+'(){\n';
+        str +='\t\treturn this.'+field['javaField']+';\n';
         str +='\t}\n';
-        str +='\tpublic void set'+field['javaField'].capitalize() +"("+ field['javaFieldType']+' '+field['javaField']+"){\n";
-        str +='\t\t this.'+field['javaField'] +'= '+field['javaField']+'\n';
+        str +='\tpublic void set'+field['javaMethodName'] +"("+ field['javaFieldType']+' '+field['javaField']+"){\n";
+        str +='\t\t this.'+field['javaField'] +'= '+field['javaField']+';\n';
         str +="\t}\n\n"
         
     return str;
@@ -179,7 +184,9 @@ def getDefMethodStr(fieldList,tableName):
 #dbName = "test";
 #tableName = "user"
 dbName = "zra";
-tableName = "tproject"
+tableName = "treconitemsoperatehis"
+testvar = 'testVar'
+print getJavaMethodName(testvar)
 
 prepare();
 print OUTDIR;
