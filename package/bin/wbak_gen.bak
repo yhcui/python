@@ -1,0 +1,59 @@
+#!
+import zipfile
+import sys;
+import os;
+import shutil;
+
+print 'start package'
+apkpath = 'H:\\package\\apk\\cl.apk';
+outputpath = "H:\\package\\gen";
+templetepath = "";
+newapkpath = 'H:\\package\\apk\\ngsteam-quick-quickforshell3-suite.apk';
+
+print apkpath;
+print outputpath;
+print templetepath;
+
+
+
+# os.rename(apkpath,newapkpath);
+# extract zip
+zipfiles = zipfile.ZipFile(newapkpath,"r");
+# zipfiles.extractall(outputpath);
+zipfiles.close();
+
+
+#
+try:
+    
+    fileList = os.listdir(outputpath);
+    
+    for ff in fileList:
+        basename =  os.path.basename(ff);
+        print ff;
+        absname = outputpath+"\\"+basename;
+        #print basename;
+        if  basename == 'classes.dex':
+            print ''
+            zipfiles = zipfile.ZipFile(outputpath+"/class.zip",'w');
+            zipfiles.write(ff);
+        else:
+            if os.path.isdir(absname):
+                shutil.rmtree(absname);
+            else:
+                os.remove(absname);
+    
+                
+            
+finally:
+    zipfiles.close();
+
+
+
+
+
+
+
+print 'end package'
+
+

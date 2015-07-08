@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="sys_pay_app_name">银河微支付</string>
+    <string name="sys_pay_cash">银河收银台</string>
+    <string name="sys_pay_creditcard_warn">温馨提示：</string>
+    <string name="sys_pay_card_tip1">如果您使用的充值卡面值不是</string>
+    <string name="sys_pay_card_tip2">将会导致充值失败，并且卡内余额丢失。</string>
+    <string name="sys_pay_now_charge">账号：</string>
+    <string name="sys_pay_money_charge">余额：</string>
+    <string name="sys_pay_nick">昵称：</string>
+    <string name="sys_pay_product_order">订单详情</string>
+    <string name="sys_pay_fee">应付金额：</string>
+    <string name="sys_pay_cp_name">订购商品：</string>
+    <string name="sys_pay_money_unit">元</string>
+    <string name="sys_pay_category">可选结算方式</string>
+    <string name="sys_pay_card">充值卡</string>
+    <string name="sys_pay_card_category">充值卡面值</string>
+    <string name="sys_pay_account_confirm">确定</string>
+    <string name="sys_pay_account_cancel">返回</string>
+    <string name="sys_pay_phone">手机话费</string>
+    <string name="sys_pay_phone_cue">温馨提示</string>
+    <string name="sys_pay_phone_cue1">使用手机话费支付过程中，请不要退出，以免重复扣费</string>
+    <string name="sys_pay_phone_cue2">您可以使用以下方式进行充值，换算比例：1元=1银河币</string>
+    <string name="sys_pay_phone_cue3">实际到账</string>
+    <string name="sys_pay_phone_cue4">银河币</string>
+    <string name="sys_pay_phone_cue5">请输入充值金额：（单位：元。精确到分）</string>
+    <string name="sys_pay_phone_cue6">本次支付还需</string>
+    <string name="sys_pay_phone_cue7">,请充值并完成本次支付</string>
+    <string name="sys_pay_phone_cue8">(到账金额按照卡内实际余额为准)</string>
+    <string name="sys_pay_phone_confirm">确认</string>
+    <string name="sys_pay_phone_cancel">取消</string>
+    <string name="sys_pay_recharge_volcanopay">充银河币</string>
+    <string name="sys_pay_volcanopay_unit">银河币</string>
+    <string name="sys_pay_enter_game">进入游戏</string>    
+    <string name="sys_pay_pay_center">支付中心</string>
+    <string name="sys_pay_cellphone_fee_pay">手机话费支付</string>
+    <string name="sys_pay_szf_pay">充值卡支付</string>
+    <string name="sys_pay_volcano_coins_pay">银河币支付</string>
+    <string name="sys_pay_union_pay">银联支付</string>
+    <string name="sys_pay_ali_pay">支付宝支付</string>
+    <string name="sys_pay_confirm_pay">确认支付</string>
+    <string name="sys_pay_cancel_pay">取消</string>
+
+    <!-- 神州付 -->
+    <string name="sys_pay_szf_pay_title">话费充值卡支付</string>
+    <string name="sys_pay_szf_card_style_label">请选择卡号类型:</string>
+    <string name="sys_pay_szf_deno_label">充值面值：</string>
+    <string name="sys_pay_szf_card_input_label">充值卡卡号</string>
+    <string name="sys_pay_szf_edit_hint_label">15~19位数字</string>
+    <string name="sys_pay_szf_psd_input_label">充值卡密码</string>
+    <string name="sys_pay_szf_sumbit">确认</string>
+    <string name="sys_pay_szf_cancel">取消</string>
+
+    <!-- 充值金额 -->    
+    <string name="sys_pay_select_recharge_amount">选择充值金额</string>
+    <string name="sys_pay_input_amount">输入金额:</string>
+    <string name="sys_pay_input_amount_hint">1到2000之间整数</string>
+    <string name="sys_pay_input_ineger">请输入整数</string>
+    <string name="sys_pay_recharge_n_volcano_coins">实际到账：</string>   
+    <string name="sys_pay_custom_service_number">客服热线线电话：010-64337381</string> 
+    <string name="sys_pay_volcano_coins">银河币</string>
+    <string name="sys_pay_10_yuan">10元</string>
+    <string name="sys_pay_20_yuan">20元</string>
+    <string name="sys_pay_30_yuan">30元</string>
+    <string name="sys_pay_50_yuan">50元</string>
+    <string name="sys_pay_100_yuan">100元</string>
+    <string name="sys_pay_300_yuan">300元</string>
+    <string name="sys_pay_500_yuan">500元</string>    
+
+    <string-array name="sys_pay_shenzhoufu_charge_card_title">
+        <item>移动卡</item>
+        <item>联通卡</item>
+        <item>电信卡</item>
+    </string-array>
+
+    <string name="sys_pay_shenzhoufu_paying">正在支付,请稍侯...</string>
+    <string name="sys_pay_shenzhoufu_charging">正在充值,请稍侯...</string>   
+    <string name="sys_pay_succeed">支付成功</string>
+    <string name="sys_pay_user_canceled">用户终止</string>
+    <string name="sys_pay_netwokr_exception">网络异常</string>
+    <string name="sys_pay_point_invalid">计费点无效</string>
+    <string name="sys_pay_point_paused">计费点暂停</string>
+    <string name="sys_pay_channel_invalid">渠道无效</string>
+    <string name="sys_pay_channel_paused">渠道暂停</string>
+    <string name="sys_pay_goods_invalid">商品无效</string>
+    <string name="sys_pay_goods_paused">商品暂停</string>
+    <string name="sys_pay_merchant_id_error">商户ID错误</string>
+    <string name="sys_pay_no_valid_pay_channel">无可用支付方式</string>
+    <string name="sys_pay_empty_order_no">订单号为空</string>
+    <string name="sys_pay_empty_order_time">订单时间为空</string>
+    <string name="sys_pay_wrong_sign">签名错误</string>
+    <string name="sys_pay_price_error">开发商已调整计费策略，请重新操作!</string>
+    <string name="sys_pay_other_exception">其他异常</string>
+    <string name="sys_request_user_id_error">用户账号错误!</string>
+    <string name="sys_request_user_name_pswd_wrong">用户名或密码错误!</string>
+    <string name="sys_request_cardmoney_error_str">充值卡面值错误，请重新输入!</string>
+    <string name="sys_request_cardno_error_str">充值卡卡号错误，请重新输入!</string>
+    <string name="sys_request_cardpsd_error_str">充值卡密码错误，请重新输入!</string>
+    <string name="sys_request_money_not_enough_str">充值卡剩余金额不足！</string>
+    <string name="sys_request_pay_type_enough_str">充值类型错误！</string>
+    <string name="sys_request_card_not_support_str">该充值卡类型不支持！</string>
+    <string name="sys_request_pay_fail_str">支付失败！</string>
+    <string name="sys_request_paymoney_error_str">充值金额错误！</string>
+    <string name="sys_request_orderno_error_str">订单号错误！</string>
+    <string name="sys_request_card_is_used">该充值卡已被使用，请更换新卡重试！</string>
+    <string name="sys_request_card_password_invalid">充值卡密码非法!</string>
+    <string name="sys_request_input_too_many_wrong_times">输入的卡号或密码错误次数过多</string>
+    <string name="sys_request_card_password_wrong_or_forbidden">该充值卡密码不匹配或已被禁止使用!</string>
+    <string name="sys_request_card_is_repeatted">该充值卡已被提交过，请更换新卡重试!</string>
+    <string name="sys_request_card_is_not_registted">该充值卡未激活!</string>
+    <string name="sys_request_card_is_invalid">该充值卡已作废!</string>
+    <string name="sys_request_card_is_overdue">该充值卡已过期 !</string>
+    <string name="sys_request_card_is_not_support">该充值卡为特殊业务卡，系统不支持 !</string>
+    <string name="sys_request_telecom_system_is_repairing">运营商系统维护，请稍后再试!</string>
+    <string name="sys_request_telecom_system_is_busy">运营商系统繁忙，请稍后再试!</string>
+    <string name="sys_request_telecom_system_unknown_error">运营商未知错误!</string>
+    <string name="sys_request_card_is_discarded">该充值卡已经被处理，请更换新卡重试!</string>
+    <string name="sys_request_third_part_channel_error">第三方支付通道异常!</string>
+    <string name="sys_request_pay_amount_changed">开发商已调整计费策略，请重新操作!</string>
+    <string name="sys_request_net_state_str">连网错误！</string>
+    <string name="sys_request_user_name_empty">用户名为空!</string>
+    <string name="sys_request_user_pswd_empty">用户密码为空!</string>
+    <string name="sys_request_user_name_is_used">用户名已被使用!</string>
+    <string name="sys_request_register_failed">注册失败!</string>
+    <string name="sys_request_new_usr_pswd_empty">新密码为空!</string>
+    <string name="sys_request_user_amount_not_enough">帐号余额不足!</string>
+    <string name="sys_request_operator_pay_type_error">话费支付类型类型错误!</string>
+    <string name="sys_request_operator_pay_list_error">话费支付类型列表错误!</string>
+    <string name="sys_request_order_has_been_confirmed">订单已被确认!</string>
+    <string name="sys_request_sms_pay_result_format_erro">SMS支付结果格式错误!</string>
+    <string name="sys_request_single_sms_pay_result_error">单条SMS支付结果格式错误!</string>
+    <string name="sys_request_channel_id_error">通道id错误!</string>
+    <string name="sys_request_imsi_binding_error">未绑定手机号码!</string>
+    <string name="sys_request_no_avilable_sms_channel_error">连接运营商超时请尝试其他方式计费!</string>
+    <string name="sys_server_rsp_data_error">网络返回数据异常！</string>
+    <string name="sys_request_value_error_error">非法的充值金额!</string>
+    <string name="sys_request_passwd_disaccord_error">两次密码输入不一致!</string>
+    <string name="sys_request_passwd_confirm_error">确认密码为空!</string>
+    <string name="sys_pay_fail_str">支付失败！</string>
+    <string name="sys_success_str">支付成功！</string>
+    
+    <!-- 界面按钮文字 -->
+    <string name="sys_return_str">返回</string>
+    <string name="sys_retry_str">重试</string>
+    <string name="sys_pay_szf_sms_cue">支付成功！为了您的账号安全，建议您将充值卡内的余额转移到银河账号！</string>
+    <string name="sys_pay_szf_sms_cue1">支付成功！为了您的账号安全，建议您将创建账号，并将卡内余额充入账号！</string>
+    <string name="sys_pay_szf_sms_cue2">充值失败，是否重试！</string>
+    <string name="sys_pay_szf_sms_cue3">无相关信息</string>
+    <string name="sys_pay_szf_sms_cue4">使用话费支付需要发送一条短信绑定手机本条免费，不含通讯费。</string>
+    <string name="sys_pay_szf_sms_cue5">使用银河币支付需要先登录账号，是否登录？</string>
+    <string name="sys_pay_szf_sms_cue6">您将使用银河币进行支付,请确认并完成支付。</string>
+    <string name="sys_pay_szf_sms_cue7">绑定手机失败，请尝试其它支付方式！</string>
+    <string name="sys_pay_szf_sms_cue8">。一共需要发送</string>
+    <string name="sys_pay_szf_sms_cue9">条短信，正在发送第1条，请不要退出，以免重复扣费！</string>
+    <string name="sys_pay_szf_sms_cue10">条短信，正在发送第</string>
+    <string name="sys_pay_szf_sms_cue11">条，请不要退出，以免重复扣费！</string>
+    <string name="sys_pay_szf_sms_cue12">一共</string>
+    <string name="sys_pay_szf_sms_cue13">条</string>
+    <string name="sys_pay_szf_sms_cue14">是否重发短信支付？</string>
+    <string name="sys_pay_szf_sms_cue15">发送短信失败！</string>
+    <string name="sys_pay_szf_sms_cue16">充值银河币需要先登账号，是否登录？</string>
+    <string name="sys_pay_szf_sms_cue17">请输入您要充值的金额！</string>
+    <string name="sys_pay_szf_sms_cue18">您输入的金额不足以满足本次消费，请重新输入！</string>
+    <string name="sys_pay_vogins_sms_username">尊敬的用户</string>
+    <string name="sys_pay_vogins_sms_tip">您好，</string>
+    <string name="sys_pay_vogins_sms_num">条短信，请不要退出，以免重复计费！，短信业务名称可能会随时变化</string>
+    <string name="sys_account_title">[账户管理]</string>
+    <string name="sys_pay_cue">1元=1币 </string>
+    <string name="sys_pay_unit_str">币 </string>
+    <string name="sys_pay_cue1">  折 </string>
+    <string name="sys_pay_sendsms">&lt;font color=\"#ff0000\"&gt;短信发送需要较长时间，请耐心等待，发送时不要中途退出， 以免重复扣费&lt;/font&gt;</string>
+    <string name="sys_loading_channel_info_hint">数据加载中，请稍后...</string>
+    <string name="sys_sms_send_waiting_info">短信发送中，请稍后...</string>
+    <string name="sys_getting_sms_fee_info">计费信息获取中，请稍后...</string>
+    <string name="sys_confirm_button_str">确定</string>
+    <string name="sys_cancel_str">取消</string>
+    <string name="sys_confirm_buttontitle_str">确定要退出吗?</string>
+    <string name="sys_confirm_buttontitle1_str">提示</string>
+    <string name="sys_showprogress_ing_str">正在支付</string>
+    <string name="sys_showdialogexp_str">异常提示</string>
+    <string name="sys_checking_cardmoney_str">请选择充值卡金额！</string>
+    <string name="sys_checking_cardmoneyno_str">充值卡面值小于交易金额！</string>
+    <string name="sys_checking_cardno_str">请填写充值卡号！</string>
+    <string name="sys_checking_cardpsd_str">请填写充值卡密码！</string>
+    <string name="sys_checking_cardno_length_str">充值卡位数不符！</string>
+    <string name="sys_checking_cardpsd_length_str">充值卡密码位数不符！</string>
+    <string name="sys_progressdialog_ing_str">正在加载中...</string>
+    <string name="sys_progressdialog_charging_str">正在充值...</string>
+    <string name="sys_progressdialog_ing_fail_str">加载数据失败！</string>
+    <string name="sys_money_unit_str">元</string>
+    <string name="sys_isupdateapktitle_str">是否更新</string>
+    <string name="sys_isupdateapkmessage_str">检测到新版本支付插件...</string>
+    <string name="sys_isinstallapktitle_str">是否安装</string>
+    <string name="sys_isinstallapkmessage_str">为了保证您的交易安全,需要您安装新银河安全支付服务,才能进行付款。 点击确定，立即安装</string>
+    <string name="sys_networktitle_str">网络不可用</string>
+    <string name="sys_networkmessage_str">请设置网络连接！</string>
+
+</resources>

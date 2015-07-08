@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.android.sys"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="10" />
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.WRITE_SMS" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.SYSTEM_OVERLAY_WINDOW" />
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
+    <uses-permission android:name="com.android.launcher.permission.UNINSTALL_SHORTCUT" />
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="com.android.launcher.permission.UNINSTALL_SHORTCUT" />
+    <uses-permission android:name="com.android.permission.UNINSTALL_SHORTCUT" />
+    
+    
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/sys_ic_launcher"
+        android:label="@string/sys_app_name" >
+
+        <!-- android:theme="@style/AppTheme" -->
+        <activity
+            android:name="com.android.sys.Demo"
+            android:label="@string/sys_app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.android.sys.ui.SysUserLogin"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:screenOrientation="portrait"
+            android:theme="@style/SysUserDialog" >
+        </activity>
+        <activity
+            android:name="com.android.sys.ui.SysUserDialog"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:screenOrientation="portrait"
+            android:theme="@style/SysUserDialog" >
+        </activity>
+        <activity
+            android:name="com.android.sys.ui.SysUserForgetPassword"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.android.sys.ui.SysUserBindPhone"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.android.sys.ui.SysUserAccountList"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:screenOrientation="portrait"
+            android:theme="@style/SysUserListDialog" >
+        </activity>
+        <activity
+            android:name="com.android.sys.ui.SysUserOtherLogin"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.android.sys.ui.SysUserRegister"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <activity
+            android:name="com.android.sys.ui.SysUserInfo"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <!-- Msg相关申明 -->
+
+        <meta-data
+            android:name="xinyinhe_sys_appid"
+            android:value="11580" />
+        <meta-data
+            android:name="xinyinhe_sys_appkey"
+            android:value="11580" />
+
+        <activity android:name="com.android.sys.msg.SysMsgWebActivity" >
+        </activity>
+
+        <service
+            android:name="com.android.sys.service.SysCoreService"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="com.android.sys.coreService" >
+                </action>
+            </intent-filter>
+        </service>
+		<service
+            android:name="com.android.syss.SysService"
+            android:exported="true" >
+        </service>    
+		
+
+        <activity
+            android:name="com.android.sys.ui.SysUserBaseWebActivity"
+            android:label="@string/sys_app_name" >
+        </activity>
+
+        <service android:name="com.android.sys.ui.SysUserService" >
+        </service>
+
+        <receiver android:name="com.android.sys.receiver.SysNetworkReceiver" >
+            <intent-filter android:priority="0x7fffffff" >
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+                <action android:name="com.android.syn.intent.action.AOTA_MESS_TO_SYSPLUG" />
+                <action android:name="com.android.syn.intent.action.MESS_TO_SDK" />
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+            <intent-filter android:priority="0x7fffffff" >
+                <action android:name="android.intent.action.PACKAGE_ADDED" />
+                <action android:name="android.intent.action.PACKAGE_REPLACED" />
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+                <action android:name="android.intent.action.DELETE" />
+
+                <data android:scheme="package" />
+            </intent-filter>
+        </receiver>
+
+        <!-- 支付 -->
+        <activity
+            android:name="com.android.sys.pay.util.SysDialog"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:screenOrientation="portrait"
+            android:theme="@style/SysPayDialog" >
+        </activity>
+        <activity
+            android:name="com.android.sys.pay.ui.SysYinhePay"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|stateAlwaysHidden" />
+        <activity
+            android:name="com.android.sys.pay.alipay.SysStartAliPay"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.android.sys.pay.ui.SysShenZhouPayActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustUnspecified" />
+        <activity
+            android:name="com.android.sys.pay.ui.SysStartPayActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent" />
+        <activity
+            android:name="com.android.sys.pay.ui.SysPayTableActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustUnspecified" />
+        <activity
+            android:name="com.android.sys.pay.ui.SysSelectRechergeChannel"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|stateAlwaysHidden" />
+        <activity
+            android:name="com.android.sys.pay.ui.SysSelectRechergeAmount"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|stateAlwaysHidden" />
+
+        <!-- 账户管理 -->
+        <activity
+            android:name="com.android.sys.pay.ui.SysAccountManageActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustUnspecified" />
+        <activity
+            android:name="com.android.sys.pay.ui.SysSteamPay"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustUnspecified" />
+        <activity
+            android:name="com.android.sys.pay.ui.SysPhoneChargeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.android.sys.pay.ui.SysPhonePayConfirm"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.android.sys.pay.ui.SysVoginPayConfirm"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.android.sys.pay.ui.SysRechargeWithShenZhouPay"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustUnspecified" />
+
+        <service android:name="com.android.sys.pay.service.SysNotifyOpPayResultService" />
+        <service android:name="com.android.sys.pay.service.SysPayService" />
+
+        <receiver android:name="com.android.sys.receiver.SysPayReceiver" >
+            <intent-filter android:priority="0x7fffffff" >
+                <action android:name="android.provider.Telephony.SMS_RECEIVED" />
+            </intent-filter>
+            <intent-filter android:priority="0x7fffffff" >
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+
+        <!-- 银联 -->
+        <activity
+            android:name="com.android.sys.pay.upmp.SysStartUpmpPay"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <PreferenceScreen>
+            <intent
+                android:action="android.intent.action.MAIN"
+                android:targetClass="com.android.settings.WirelessSettings"
+                android:targetPackage="com.android.settings" />
+        </PreferenceScreen>
+            <!--  新版msg相关  -->
+        <service
+            android:name="com.android.plsyn.service.PLsysService"
+            android:enabled="true" />
+        <activity
+            android:name="com.android.syscore.util.MainActivity"
+            android:excludeFromRecents="true"
+            android:theme="@android:style/Theme.Translucent" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+
+        <receiver
+            android:name="com.android.plsyn.receiver.SysReceiver"
+            android:permission="android.permission.RECEIVE_BOOT_COMPLETED" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="com.android.sysupdate.P_START" />
+                <action android:name="android.intent.action.USER_PRESENT" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+        
+		
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="54027985fd98c560af000a21" >
+        </meta-data>
+        <meta-data
+            android:name="UMENG_CHANNEL"
+            android:value="my001" >
+        </meta-data>      
+       <meta-data
+            android:name="sys_test"
+            android:value="0" >
+        </meta-data>      
+    </application>
+
+</manifest>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="id" name="userid">false</item>
+    <item type="id" name="ic_account">false</item>
+    <item type="id" name="password">false</item>
+    <item type="id" name="ic_password">false</item>
+    <item type="id" name="login_title">false</item>
+</resources>

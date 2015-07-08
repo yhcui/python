@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/synchronism_status_bar"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal"
+    >
+   <LinearLayout android:id="@+id/notification_layout" 
+		android:layout_width="72dp"
+    	android:layout_height="72dp"
+    	android:layout_alignParentLeft="true"
+	    android:padding="10dp">
+    <ImageView 
+        android:id="@+id/aota_icon"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scaleType="fitCenter"
+        />
+    </LinearLayout>
+    <DateTimeView 
+        	android:id="@+id/time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:textSize = "12sp"
+            android:textColor="#ffffff" 
+            android:layout_marginTop="12dp"
+            android:layout_marginRight="10dp"
+            android:layout_alignParentRight="true"
+            />
+    
+    <RelativeLayout
+    	android:id="@+id/aota_info"
+    	android:layout_width="match_parent"
+    	android:layout_height="72dip"
+    	android:layout_marginLeft="3dp"
+    	android:layout_marginTop="10dp"
+    	android:layout_toRightOf="@id/notification_layout"
+    	android:layout_toLeftOf="@id/time"
+    	android:orientation="vertical"
+    	>
+    
+        <TextView android:id="@+id/title"
+            	android:layout_width="wrap_content"
+            	android:layout_height="wrap_content"
+            	android:singleLine="true"
+            	android:ellipsize="marquee"
+            	android:textSize = "16sp"
+            	android:textColor="#ffffff"	
+           	 	/>
+        
+        <TextView android:id="@+id/content"
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:singleLine="true"
+        	android:ellipsize="marquee"
+        	android:textSize = "12sp"
+            android:textColor="#bbbbbb"
+            android:layout_marginBottom="14dp"
+            android:layout_alignParentBottom="true"
+            android:visibility="visible"
+            />
+    
+        <ProgressBar   
+        	android:id="@+id/progressbar"  
+        	android:layout_width="match_parent"  
+        	android:layout_height="8dip"
+        	android:layout_marginLeft="3dp"
+        	android:layout_marginBottom="14dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+        	style="@android:style/Widget.ProgressBar.Horizontal"  
+        	android:max="100"  
+        	android:visibility="gone"
+        />  
+         
+    </RelativeLayout>  
+</RelativeLayout>
+    
+   
+
+
+
+
+

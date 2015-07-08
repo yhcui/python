@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="white">#ffffffff</color>
+    <color name="black">#000000</color>
+    <color name="bg_color">#f2f2f2</color>
+    <color name ="bg_color2">#efefec</color>
+    <color name = "bg_color3">#fcfcfc</color>
+    <color name = "item_highlight_color">#3ab9e4</color>
+    <color name="transparent">#00000000</color>
+    <color name="title">#FFFFFF</color>
+    <color name="text">#323232</color>
+    <color name ="text2">#5ba900</color>
+    <color name="input_text_color">#959595</color>
+    <color name="text_caption_color">#11b13e</color>
+    <color name="link_color">#ff6600</color>
+</resources>

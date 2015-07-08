@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#efefec" >
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_centerInParent="true" >
+
+        <RelativeLayout
+            android:id="@+id/sys_main_1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <!-- 标题栏 -->
+
+            <include
+                android:id="@+id/sys_title1"
+                layout="@layout/sys_paytitle" />
+
+            <ScrollView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_below="@id/sys_title1"
+                android:scrollbars="vertical" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:orientation="vertical" >
+
+                    <!-- 账户界面 -->
+
+                    <LinearLayout
+                        android:id="@+id/sys_main_account_ly"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:background="@drawable/sys_payareabg"
+                        android:orientation="vertical"
+                        android:padding="5dp" >
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginTop="5dp"
+                            android:orientation="horizontal" >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="fill_parent"
+                                android:text="@string/sys_pay_nick"
+                                android:textColor="#4e4e4e"
+                                android:textSize="16sp" />
+
+                            <TextView
+                                android:id="@+id/sys_pay_nickname"
+                                style="@style/sys_pay_text_16"
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:text="543212" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginTop="5dp"
+                            android:orientation="horizontal" >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="fill_parent"
+                                android:text="@string/sys_pay_now_charge"
+                                android:textColor="#4e4e4e"
+                                android:textSize="16sp" />
+
+                            <TextView
+                                android:id="@+id/sys_tv_pay_accountname"
+                                style="@style/sys_pay_text_16"
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:text="543212" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginTop="5dp"
+                            android:orientation="horizontal" >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="fill_parent"
+                                android:gravity="center_vertical"
+                                android:text="@string/sys_pay_money_charge"
+                                android:textColor="#4e4e4e"
+                                android:textSize="16sp" />
+
+                            <TextView
+                                android:id="@+id/sys_tv_pay_accountcharge"
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:layout_weight="1"
+                                android:gravity="center_vertical"
+                                android:text="0"
+                                android:textColor="#ff5a11"
+                                android:textSize="16sp" />
+                        </LinearLayout>
+                    </LinearLayout>
+                    <!-- 主界面1 -->
+
+                    <LinearLayout
+                        android:id="@+id/sys_tab1_ly"
+                        android:layout_width="fill_parent"
+                        android:layout_height="340dp"
+                        android:fadeScrollbars="false"
+                        android:orientation="vertical" >
+
+                        <!-- 用户信息栏 -->
+
+                        <LinearLayout
+                            android:id="@+id/sys_main_info_ly"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentTop="true"
+                            android:orientation="vertical" >
+
+                            <!-- 商品栏 -->
+
+                            <LinearLayout
+                                android:id="@+id/sys_box_title"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal" >
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="20dp"
+                                    android:layout_gravity="center_vertical"
+                                    android:gravity="center_vertical"
+                                    android:paddingLeft="15dp"
+                                    android:paddingRight="15dp"
+                                    android:text="@string/sys_pay_product_order"
+                                    android:textColor="#565656"
+                                    android:textSize="16dp" />
+
+                                <ImageView
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="1dp"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginRight="15dp"
+                                    android:background="#c8c8c6" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/sys_main_arrow"
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:layout_margin="10dp"
+                                android:background="@drawable/sys_payareabg"
+                                android:orientation="vertical"
+                                android:padding="5dp" >
+
+
+                                <!-- 内容提供 -->
+
+                                <RelativeLayout
+                                    android:id="@+id/sys_main_cp_ly"
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginRight="5dp"
+                                    android:layout_marginTop="5dp" >
+
+                                    <TextView
+                                        android:id="@+id/sys_tv_cpname_text"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentLeft="true"
+                                        android:text="@string/sys_pay_cp_name"
+                                        android:textColor="#4e4e4e"
+                                        android:textSize="16sp" />
+
+                                    <TextView
+                                        android:id="@+id/sys_tv_paycontent"
+                                        style="@style/sys_pay_text_16"
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_toRightOf="@id/sys_tv_cpname_text" />
+                                </RelativeLayout>
+                                <!-- 商品价格 -->
+
+                                <RelativeLayout
+                                    android:id="@+id/sys_main_fee_ly"
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="5dp"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginRight="5dp"
+                                    android:layout_marginTop="5dp" >
+
+                                    <TextView
+                                        android:id="@+id/sys_pay_fee_text"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentLeft="true"
+                                        android:layout_centerVertical="true"
+                                        android:text="@string/sys_pay_fee"
+                                        android:textColor="#4e4e4e"
+                                        android:textSize="16sp" />
+
+                                    <TextView
+                                        android:id="@+id/sys_tv_pay_fee"
+                                        style="@style/sys_pay_text_16"
+                                        android:layout_width="170dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_toRightOf="@id/sys_pay_fee_text"
+                                        android:textColor="@color/sys_priceColor" />
+                                </RelativeLayout>
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <!-- 支付方式 -->
+
+                        <LinearLayout
+                            android:id="@+id/sys_pay_title"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal" >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="20dp"
+                                android:layout_marginLeft="15dp"
+                                android:gravity="center_vertical"
+                                android:text="@string/sys_pay_category"
+                                android:textColor="#565656"
+                                android:textSize="16sp" />
+
+                            <ImageView
+                                android:layout_width="fill_parent"
+                                android:layout_height="1dp"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginRight="15dp"
+                                android:background="#c8c8c6" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/sys_layout_lv"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginTop="10dp"
+                            android:gravity="center"
+                            android:orientation="vertical" >
+
+                            <GridView
+                                android:id="@+id/sys_gv_payitem"
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:gravity="center_horizontal"
+                                android:numColumns="3"
+                                android:stretchMode="columnWidth" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </ScrollView>
+        </RelativeLayout>
+    </FrameLayout>
+
+</RelativeLayout>

@@ -1,0 +1,16 @@
+<resources>
+
+    <string name="xyhsys_u_tilte">bn</string>
+    <string name="xyhsys_u_tip">The boot complete has received!</string>
+    <string name="xyhsys_btn_ok">OK</string>
+    <string name="xyhsys_notificationTitle_softu">软件更新</string>
+    <string name="xyhsys_notificationTitle_pmsg">您有新的通知</string>
+    <string name="xyhsys_notificationTitle_pmsgContent">主题:致我们早已逝去的青春-让我们过一个有意义的儿童节\n http://www.ggg.com/angrybird.apk \n 【更多应用下载】 \n http://gdown.baidu.com/data/wisegame/5633ed3259c7dac5/baiduliulanqi.apk \n 【更多主题下载】 \n http://gdown.baidu.com/data/wisegame/5633ed3259c7dac5/123123.apk \n</string>
+   
+    <!-- for inner dan test -->
+    <string name="xyhsys_u_default_server">http://msg.xinyinhe.com</string>
+    <string name="xyhsys_u_default_http_server">http://msg.xinyinhe.com</string>
+    <string name="xyhsys_u_default_download_server">http://msg.xinyinhe.com</string>
+    <string name="xyhsys_u_default_download_server_qa">http://msg.xinyinhe.com</string>
+    <string name="xyhsys_u_cp_channel">1</string>
+</resources>

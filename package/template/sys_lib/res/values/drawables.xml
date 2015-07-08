@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="drawable" name="font_gray">#ffbfbfbf</item>
+    <item type="drawable" name="black">#ff000000</item>
+    <item type="drawable" name="blue">#ff2a00ff</item>
+    <item type="drawable" name="green">#ff00ff00</item>
+    <item type="drawable" name="yellow">#fffffea4</item>
+    <item type="drawable" name="dark_gray">#ff8f8f8f</item>
+    <item type="drawable" name="light_gray">#ffeeeeee</item>
+    <item type="drawable" name="foot_text_day">#ff666666</item>
+    <item type="drawable" name="foot_text_night">#ff64666b</item>
+</resources>
