@@ -1,0 +1,130 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"  
+    android:layout_gravity="center_horizontal"
+    android:gravity="center">
+    <Button 
+        android:id = "@+id/login"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="登录"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:gravity="center"
+        android:padding="8dip"
+        android:layout_marginLeft="20dip"
+        android:layout_marginRight="20dip"
+        android:layout_marginTop="20dip"
+        android:visibility="visible"
+        android:background="@drawable/sys_button_bg"/>
+    
+    <Button 
+        android:id = "@+id/modify_user"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="修改用户信息"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:gravity="center"
+        android:padding="8dip"
+        android:layout_marginLeft="20dip"
+        android:layout_marginRight="20dip"
+        android:layout_marginTop="20dip"
+        android:layout_below="@id/login"
+        android:visibility="visible"
+        android:background="@drawable/sys_button_bg"/>
+    
+    <Button 
+        android:id = "@+id/bindGuest"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="游客转为正式用户"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:gravity="center"
+        android:padding="8dip"
+        android:layout_marginLeft="20dip"
+        android:layout_marginRight="20dip"
+        android:layout_marginTop="20dip"
+        android:layout_below="@id/modify_user"
+        android:visibility="visible"
+        android:background="@drawable/sys_button_bg"/>
+    
+    <Button 
+        android:id = "@+id/bindPhone"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="绑定手机"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:gravity="center"
+        android:padding="8dip"
+        android:layout_below="@id/bindGuest"
+        android:layout_marginLeft="20dip"
+        android:layout_marginRight="20dip"
+        android:layout_marginTop="20dip"
+        android:visibility="visible"
+        android:background="@drawable/sys_button_bg"/>
+    
+    <Button 
+        android:id = "@+id/guestlogin"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="游客登录"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:gravity="center"
+        android:padding="8dip"
+        android:layout_below="@id/bindPhone"
+        android:layout_marginLeft="20dip"
+        android:layout_marginRight="20dip"
+        android:layout_marginTop="20dip"
+        android:visibility="visible"
+        android:background="@drawable/sys_button_bg"/>
+    
+    <Button
+        android:id="@+id/volpay"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/guestlogin"
+        android:layout_marginLeft="20dip"
+        android:layout_marginRight="20dip"
+        android:layout_marginTop="20dip"
+        android:background="@drawable/sys_button_bg"
+        android:gravity="center"
+        android:padding="8dip"
+        android:text="银河支付"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+    
+    <Button 
+        android:id = "@+id/logout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="退出登录"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:gravity="center"
+        android:padding="8dip"
+        android:layout_below="@id/volpay"
+        android:layout_marginLeft="20dip"
+        android:layout_marginRight="20dip"
+        android:layout_marginTop="20dip"
+        android:visibility="visible"
+        android:background="@drawable/sys_button_bg"/>
+    
+    <TextView
+        android:id="@+id/version"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        android:layout_marginTop="20dip"
+        android:text="@string/sys_version"
+        android:gravity="center"
+        android:layout_below="@id/logout">
+        
+    </TextView>
+</RelativeLayout>

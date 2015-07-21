@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<color name="sys_AppBackgroundColor">#FFC0E7FA</color>
+	<color name="sys_ColorBlack">#FF000000</color>
+	<color name="sys_ColorWhite">#FFFFFFFF</color>
+	<color name="sys_ColorBlue">#0066CC</color>
+	<color name="sys_ColorGray">#FF505050</color>
+	<color name="sys_ColorRed">#FFE26926</color>
+	<color name="sys_BgColor">#ffd1dce9</color>
+	<color name="sys_priceColor">#ff4e00</color>
+	<color name="sys_cueColor">#e74444</color>
+	<color name="sys_accountnameColor">#0396e7</color>
+	<color name="sys_textcolorblack">#000000</color>
+	<color name="sys_volcanocolor">#FFFF0000</color>
+	<color name="sys_pay_tablecolor">#4d4d4d</color>
+	<color name="sys_pay_tablecolor_down">#3292b5</color>
+</resources>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="?android:attr/progressBarStyleHorizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/sys_alertbg"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:gravity="center" >
+
+        <TextView
+            android:id="@+id/sys_tv_dialogtv"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="left"
+            android:textColor="#FFFFFF"
+            android:textSize="18dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/sys_tv_dialogtv1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:gravity="center_horizontal"
+            android:textColor="#000000"
+            android:textSize="20dp" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <Button
+                android:id="@+id/sys_btn_sms_confirm"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/sys_pay_btn_selector"
+                android:paddingLeft="40dp"
+                android:paddingRight="40dp"
+                android:text="@string/sys_pay_szf_sumbit"
+                android:textColor="#ffffff"
+                android:textSize="18dp" />
+
+            <Button
+                android:id="@+id/sys_btn_sms_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/sys_pay_btn_selector"
+                android:paddingLeft="40dp"
+                android:paddingRight="40dp"
+                android:text="@string/sys_pay_szf_cancel"
+                android:textColor="#ffffff"
+                android:textSize="18dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

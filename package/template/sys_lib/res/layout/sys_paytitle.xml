@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/sys_title"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/sys_titlebg" >
+
+        <ImageButton
+            android:id="@+id/sys_iv_pay_title_return"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/sys_iv_paytitlereturn_selector" />
+
+        <LinearLayout
+            android:id="@+id/sys_ll_pay_titlebg"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/vgo_iv_pay_title_logo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/sys_volcano_logo"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/sys_pay_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/sys_pay_pay_center"
+                android:textColor="#ffffff"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/sys_btn_pay_title_key"
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/sys_pay_by_button_selector"
+            android:text="@string/sys_pay_enter_game"
+            android:textColor="#00678a"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/sys_user_list_item"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_vertical"
+    android:gravity="center_vertical"
+    android:paddingLeft="6dip"
+    android:paddingRight="10dip" >
+
+    <ImageView
+        android:id="@+id/sys_user_del_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:src="@drawable/sys_del_account"
+        android:layout_centerVertical="true"
+        android:paddingLeft="6dip"
+        android:paddingRight="6dip"
+        android:paddingTop="12dip"
+        android:paddingBottom="12dip"/>
+
+    <TextView
+        android:id="@+id/sys_user_user_name"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/sys_user_select_icon"
+        android:layout_toRightOf="@id/sys_user_del_icon"
+        android:layout_centerVertical="true"
+        android:paddingLeft="6dip"
+        android:textColor="@color/black"
+        android:textSize="16sp" />
+
+    <ImageView
+        android:id="@+id/sys_user_select_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true" />
+
+</RelativeLayout>

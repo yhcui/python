@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#efefec"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/sys_title1"
+        layout="@layout/sys_paytitle" />
+
+    <LinearLayout
+        android:id="@+id/sys_box"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/sys_vol_payareabg"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id = "@+id/sys_pay_need_pay_money_hint"
+                style="@style/sys_pay_text_16"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="5dp"
+                android:gravity="center_vertical"
+                android:text="@string/sys_pay_fee" />
+
+            <TextView
+                android:id = "@+id/sys_pay_need_pay_money"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="15dp"
+                android:layout_toRightOf="@id/sys_pay_need_pay_money_hint"
+                android:gravity="center_vertical"                
+                android:textColor="#fc6935" />
+
+            <TextView
+                style="@style/sys_pay_text_16"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="5dp"
+                android:gravity="center_vertical"
+                android:layout_toRightOf="@id/sys_pay_need_pay_money"
+                android:text="@string/sys_pay_volcanopay_unit" />
+                    <TextView
+                android:id = "@+id/sys_pay_money_not_enough"
+                style="@style/sys_pay_text_16"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"                
+                android:gravity="center_vertical"
+                android:layout_marginRight="15dp"
+                android:layout_alignParentRight="true"
+                android:text="余额不足" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/sys_pay_text_16"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:gravity="center_vertical"
+                android:text="账号余额：" />
+
+            <TextView
+                android:id = "@+id/sys_pay_account_balances"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="15dp"
+                android:gravity="center_vertical"
+                android:textColor="#fc6935" />
+
+            <TextView
+                style="@style/sys_pay_text_16"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="5dp"
+                android:gravity="center_vertical"
+                android:text="@string/sys_pay_volcanopay_unit" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/sys_box_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:orientation="vertical" >
+
+        <Button
+            android:id = "@+id/sys_pay_confirm_volcano_pay"
+            style="@style/sys_pay_text_16"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/sys_pay_btn_selector"
+            android:text="@string/sys_pay_confirm_pay"
+            android:textColor="#FFFFFF" />
+
+        <TextView
+            android:id = "@+id/sys_pay_other_pay_channel"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="其他支付方式"
+            android:textColor="#2c9c46" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lv_id25"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/sys_pay_box_bg"
+        android:gravity="center_vertical"
+        android:orientation="vertical" 
+        >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="5dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="10dp"
+            android:singleLine="true" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:text="温馨提示"
+                android:textColor="#818181"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:singleLine="true" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:text="付款过程中有任何问题，欢迎来电"
+                android:textColor="#818181"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/sys_tv_paymoney"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:singleLine="true"
+                android:text="10元"
+                android:textColor="#818181"
+                android:textSize="14sp" 
+                android:visibility="gone"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="5dp"
+            android:singleLine="true" 
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:text="@string/sys_pay_card_tip2"
+                android:textColor="#818181"
+                android:textSize="14sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp" 
+        >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="客服热线线电话：010-64337381"
+            android:textColor="#818181" />
+    </LinearLayout>
+
+</LinearLayout>

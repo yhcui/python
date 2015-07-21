@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 神州付充值界面 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#efefec"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/sys_title1"
+        layout="@layout/sys_paytitle" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scrollbars="vertical" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/lv_id"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:text="@string/sys_pay_select_recharge_amount"
+                    android:textColor="#565656"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="15dp"
+                    android:background="#c8c8c6" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lv_id1"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:layout_below="@+id/lv_id"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp" >
+
+                <Button
+                    android:id="@+id/sys_btn_10_yuan"
+                    style="@style/sys_pay_text_16"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/sys_btn_moneyup"
+                    android:text="@string/sys_pay_10_yuan" />
+
+                <Button
+                    android:id="@+id/sys_btn_20_yuan"
+                    style="@style/sys_pay_text_16"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/sys_btn_moneyup"
+                    android:text="@string/sys_pay_20_yuan" />
+
+                <Button
+                    android:id="@+id/sys_btn_30_yuan"
+                    style="@style/sys_pay_text_16"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/sys_btn_moneyup"
+                    android:text="@string/sys_pay_30_yuan" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lv_id2"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:layout_below="@+id/lv_id1"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp" >
+
+                <Button
+                    android:id="@+id/sys_btn_50_yuan"
+                    style="@style/sys_pay_text_16"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/sys_btn_moneyup"
+                    android:text="@string/sys_pay_50_yuan" />
+
+                <Button
+                    android:id="@+id/sys_btn_100_yuan"
+                    style="@style/sys_pay_text_16"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/sys_btn_moneyup"
+                    android:text="@string/sys_pay_100_yuan" />
+
+                <Button
+                    android:id="@+id/sys_btn_300_yuan"
+                    style="@style/sys_pay_text_16"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/sys_btn_moneyup"
+                    android:text="@string/sys_pay_300_yuan" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lv_id22"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:layout_below="@+id/lv_id2"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:text="@string/sys_pay_input_amount_hint"
+                    android:textColor="#565656"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/sys_pay_input_amount"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="15dp"
+                    android:background="@drawable/sys_inputbg"
+                    android:hint="@string/sys_pay_input_amount_hint"
+                    android:inputType="number"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:textColor="#565656"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lv_idcur"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/lv_id22"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/sys_pay_text_16"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:text="@string/sys_pay_input_amount"
+                    android:visibility="invisible" />
+
+                <TextView
+                    style="@style/sys_pay_text_16"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:text="@string/sys_pay_input_ineger"
+                    android:textColor="@color/sys_ColorRed" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lv_id23"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/lv_idcur"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/sys_pay_text_16"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:text="@string/sys_pay_recharge_n_volcano_coins"
+                    android:textColor="#565656" />
+
+                <TextView
+                    android:id="@+id/sys_pay_n_volcano_coins"
+                    style="@style/sys_pay_text_16"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="#fc6935" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lv_id24"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/lv_id23"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/sys_pay_btn_confirm_pay"
+                    style="@style/sys_pay_text_16"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:background="@drawable/sys_pay_btn_selector"
+                    android:text="@string/sys_pay_confirm_pay"
+                    android:textColor="#FFFFFF" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lv_id25"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/lv_id24"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/sys_pay_box_bg"
+                android:gravity="center_vertical"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="10dp"
+                    android:singleLine="true" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:text="@string/sys_pay_creditcard_warn"
+                        android:textColor="#818181"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:singleLine="true" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:text="@string/sys_pay_card_tip1"
+                        android:textColor="#818181"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/sys_tv_paymoney"
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:singleLine="true"
+                        android:text=""
+                        android:textColor="#818181"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="5dp"
+                    android:singleLine="true" >
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:text="@string/sys_pay_card_tip2"
+                        android:textColor="#818181"
+                        android:textSize="14sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/lv_id25"
+                android:layout_marginTop="10dp" >
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="@string/sys_pay_custom_service_number"
+                    android:textColor="#818181" />
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+</LinearLayout>
