@@ -114,15 +114,15 @@ def getJavaFieldTypeFromMysqlType(mysqlTypeInfoDic):
     elif 'float'== mysqlTypeStr:
         return 'Float';
     elif 'int'== mysqlTypeStr or 'integer'== mysqlTypeStr:
-        return 'Integer'; #公司代码目前需要用int,原来计划是Log
+        return 'Integer'; #公司代码目前需要用int,原来计划是Long
     elif 'date'== mysqlTypeStr:
         return 'Date';
     elif 'time'== mysqlTypeStr:
         return 'Time';
     elif 'datetime'== mysqlTypeStr or 'timestamp'== mysqlTypeStr:
-        return 'Timestamp'
-    elif 'year'== mysqlTypeStr:
         return 'Date';
+    elif 'year'== mysqlTypeStr:
+        return 'Date';#公司代码目前需要用Date,原来计划是Tmestamp
     elif 'tinyint'== mysqlTypeStr or 'smallint'== mysqlTypeStr or 'mediumint'== mysqlTypeStr or 'boolean'== mysqlTypeStr:
         return 'Integer';
     elif 'bigint'== mysqlTypeStr:
@@ -184,7 +184,7 @@ def getDefMethodStr(fieldList,tableName):
 #dbName = "test";
 #tableName = "user"
 dbName = "zra";
-tableName = "ftaskinfo"
+tableName = "tincomedonehis"
 
 
 prepare();
