@@ -184,7 +184,7 @@ def getDefMethodStr(fieldList,tableName):
 #dbName = "test";
 #tableName = "user"
 dbName = "zra";
-tableName = "tincomedonehis"
+tableName = "tincomedonedate"
 
 
 prepare();
